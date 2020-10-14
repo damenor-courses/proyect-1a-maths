@@ -10,3 +10,10 @@ console.log('suma:', math.suma(n1, n2))
 console.log('resta:', math.resta(n1, n2))
 console.log('multiplicacion:', math.multiplicacion(n1, n2))
 console.log('division:', math.division(n1, n2))
+
+console.log('CONTROL DE ERRORES')
+
+console.log('suma:', math.suma('text', n2))
+console.log('resta:', math.resta(true, n2))
+console.log('multiplicacion:', math.multiplicacion(false, n2))
+console.log('division:', math.division('text', n2))

@@ -5,7 +5,7 @@
  * @param {*} n1 Numero uno de la suma
  * @param {*} n2 Numbero dos de la suma
  */
-const suma = (n1, n2) => n1 + n2
+const suma = (n1, n2) => isNumber(n1, n2) ? n1 + n2 : handleError()
 
 /**
  * Resta de dos numeros
@@ -14,7 +14,7 @@ const suma = (n1, n2) => n1 + n2
  * @param {*} n1 Numero uno de la resta
  * @param {*} n2 Numbero dos de la resta
  */
-const resta = (n1, n2) => n1 - n2
+const resta = (n1, n2) => isNumber(n1, n2) ? n1 - n2 : handleError()
 
 /**
  * Multiplicacion de dos numeros
@@ -23,7 +23,7 @@ const resta = (n1, n2) => n1 - n2
  * @param {*} n1 Numero uno de la multiplicacion
  * @param {*} n2 Numbero dos de la multiplicacion
  */
-const multiplicacion = (n1, n2) => n1 * n2
+const multiplicacion = (n1, n2) => isNumber(n1, n2) ? n1 * n2 : handleError()
 
 /**
  * Division de dos numeros
@@ -32,7 +32,11 @@ const multiplicacion = (n1, n2) => n1 * n2
  * @param {*} n1 Numero uno de la division
  * @param {*} n2 Numbero dos de la division
  */
-const division = (n1, n2) => n1 / n2
+const division = (n1, n2) => isNumber(n1, n2) ? n1 / n2 : handleError()
+
+const isNumber = (n1, n2) => typeof n1 !== 'number' || typeof n2 !== 'number' ? false : true
+
+const handleError = () => console.log('Algunos de los valores no son numéricos')
 
 module.exports = {
   suma,
