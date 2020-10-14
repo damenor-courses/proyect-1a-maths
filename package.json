@@ -1,0 +1,27 @@
+{
+  "name": "proyect-1a-maths",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damenor-courses/proyect-1a-maths.git"
+  },
+  "keywords": [
+    "math",
+    "matematica",
+    "suma",
+    "resta",
+    "multi",
+    "basico"
+  ],
+  "author": "David Menor <damenor.develop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damenor-courses/proyect-1a-maths/issues"
+  },
+  "homepage": "https://github.com/damenor-courses/proyect-1a-maths#readme"
+}
